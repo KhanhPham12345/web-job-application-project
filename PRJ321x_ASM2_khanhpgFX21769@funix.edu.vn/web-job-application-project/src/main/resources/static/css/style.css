@@ -1,0 +1,169 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 20px;
+}
+
+h2 {
+	color: #007BFF;
+}
+
+h3 {
+	color: #555;
+}
+
+strong {
+	color: #007BFF; /* Example: Change color of company name */
+}
+
+.fixed-size-img {
+	width: 100px;
+	height: 100px;
+}
+
+.scrollable-table {
+	height: 400px; /* Adjust the height as needed */
+	overflow-y: scroll;
+	display: block;
+}
+
+.scrollable-table table {
+	width: 50%;
+	border-collapse: collapse;
+}
+
+.scrollable-table th, .scrollable-table td {
+	padding: 8px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.scrollable-table th {
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+.error {
+	color: red;
+	font-size: 0.9em;
+}
+
+.error-message {
+	background-color: #f8d7da; /* Light red background */
+	color: #721c24; /* Dark red text */
+	border: 1px solid #f5c6cb; /* Border matching the background */
+	padding: 10px; /* Add some padding */
+	margin-bottom: 15px; /* Add space below the message */
+	border-radius: 4px; /* Slightly rounded corners */
+	font-size: 14px; /* Adjust font size if needed */
+}
+
+.button-link {
+	background-color: #007BFF;
+	color: white;
+	padding: 8px 12px;
+	text-decoration: none;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}
+
+#wrapper {
+	width: 100%;
+	margin-top: 0px;
+}
+
+#header {
+	width: 70%;
+	background: #09c332;
+	margin-top: 0px;
+	padding: 15px 0px 15px 15px;
+}
+
+#header h2 {
+	width: 100%;
+	margin: auto;
+	color: #FFFFFF;
+}
+
+#container {
+	width: 100%;
+	margin: auto
+}
+
+#container h3 {
+	color: #000;
+}
+
+#container #content {
+	margin-top: 20px;
+}
+
+/* Basic flexbox styling to display forms side by side */
+.form-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px; /* Adjust spacing between the forms as needed */
+}
+
+.form-wrapper {
+	flex: 1; /* Equal width for both forms */
+	min-width: 300px; /* Minimum width for each form */
+}
+
+.fixed-size-img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+/* Style for the popup */
+.popup {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1000; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black background with opacity */
+}
+
+.popup-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Additional styles can be added here */
